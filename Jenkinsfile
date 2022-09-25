@@ -1,9 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage('Build'){
+        stage('build'){
             setps{
                 echo "build"
+            }
+        }
+        stage('test'){
+            setps{
+                echo "testing application"
             }
         }
     }
