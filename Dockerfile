@@ -15,4 +15,4 @@ USER django
 RUN pip install -U pip
 RUN pip install -r requirements.txt
 
-CMD [ "uwgi", "--scoket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "app.wsgi"]
+CMD [ "uwsgi", "--scoket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "app.wsgi"]
