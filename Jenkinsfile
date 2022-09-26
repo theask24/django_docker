@@ -11,5 +11,10 @@ pipeline{
                 echo "testing application"
             }
         }
+        stage('deploy'){
+            setps{
+                echo "deploy application"
+            }
+        }
     }
 }
