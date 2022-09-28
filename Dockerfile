@@ -8,7 +8,7 @@ RUN mkdir /code
 WORKDIR /code
 COPY . /code/
 
-RUN pip install -U pip
+#RUN pip install -U pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "uwsgi", "--scoket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "app.wsgi"]
+#CMD [ "uwsgi", "--scoket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "app.wsgi"]
